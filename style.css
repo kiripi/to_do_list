@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 60%;
+}
+
+body {
+  height: 100vh;
+  background-color: #85ffbd;
+  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+}
+
+.container {
+  border: 2px solid white;
+  left: 50%;
+  padding: 3rem 4rem;
+  position: absolute;
+  width: 40%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.task {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  position: relative;
+  padding: 3rem 2rem;
+}
+
+.task__input {
+  border: 1px solid #999;
+  height: 4rem;
+  padding: 1rem;
+  position: relative;
+  width: 70%;
+}
+
+.task__input:focus {
+  outline: none;
+}
+
+.task__add {
+  background-color: #57cc99;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  float: right;
+  height: 4rem;
+  position: relative;
+  width: 20%;
+}
+
+.task__input,
+.task__add {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.taskboard {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  padding: 3rem 2rem;
+  position: relative;
+  margin: 5rem 0 1rem 0;
+  width: 100%;
+}
