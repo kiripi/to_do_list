@@ -9,9 +9,10 @@ html {
 }
 
 body {
-  height: 100vh;
   background-color: #85ffbd;
   background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+  height: 100vh;
+  width: 100%;
 }
 
 .container {
@@ -19,7 +20,7 @@ body {
   left: 50%;
   padding: 3rem 4rem;
   position: absolute;
-  width: 40%;
+  width: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
@@ -33,7 +34,7 @@ body {
 }
 
 .task__input {
-  border: 1px solid #999;
+  border: 1px solid #ccc;
   height: 4rem;
   padding: 1rem;
   position: relative;
@@ -62,26 +63,36 @@ body {
   font-weight: bold;
 }
 
-.taskboard {
+.wrapper {
   background-color: #f1f1f1;
   border-radius: 5px;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  margin: 12rem auto;
+  max-width: 60rem;
+  padding: 0 2.5rem;
+  padding-bottom: 2rem;
+  width: 100%;
+}
+
+.taskboard {
   padding: 3rem 2rem;
   position: relative;
   margin: 5rem 0 1rem 0;
-  width: 100%;
+  max-height: 40rem;
+  overflow: auto;
 }
 
 .assignment {
   align-items: center;
   background-color: #fff;
-  border: 1px solid #999;
-  cursor: pointer;
-  display: flex;
-  height: 5rem;
-  justify-content: space-between;
+  border-bottom: 1px solid #999;
+  display: inline-flex;
+  justify-content: center;
   margin-top: 1rem;
+  overflow: hidden;
   padding: 1rem 2rem;
+  position: relative;
+  width: 100%;
 }
 
 .assignment__name {
@@ -93,11 +104,35 @@ body {
   border: none;
   border-radius: 5px;
   color: #fff;
-  height: 4rem;
-  outline: none;
-  width: 5rem;
+  cursor: pointer;
+  height: 5rem;
+  position: absolute;
+  right: 0px;
+  width: 10%;
 }
 
 .assignment__completed {
   text-decoration: line-through;
+}
+
+.summary {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.summary__text {
+  font-size: 2rem;
+}
+
+.summary__remove-all {
+  background-color: #e76f51;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
 }
