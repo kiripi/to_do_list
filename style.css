@@ -71,3 +71,33 @@ body {
   margin: 5rem 0 1rem 0;
   width: 100%;
 }
+
+.assignment {
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #999;
+  cursor: pointer;
+  display: flex;
+  height: 5rem;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+}
+
+.assignment__name {
+  font-size: 2rem;
+}
+
+.task__remove {
+  background-color: #e76f51;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  height: 4rem;
+  outline: none;
+  width: 5rem;
+}
+
+.assignment__completed {
+  text-decoration: line-through;
+}
