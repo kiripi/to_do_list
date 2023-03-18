@@ -1,4 +1,5 @@
 document.querySelector(".task__add").onclick = function () {
+  const pendingNumb = document.querySelector(".pending");
   if (document.querySelector(".task__input").value == 0)
     alert("Please write a new task");
   else {
@@ -17,6 +18,7 @@ document.querySelector(".task__add").onclick = function () {
     for (let i = 0; i < taskCurrent.length; i++) {
       taskCurrent[i].onclick = function () {
         this.parentNode.remove();
+        pendingNumb.textContent -= 1;
       };
     }
 
@@ -27,6 +29,7 @@ document.querySelector(".task__add").onclick = function () {
       };
     }
 
+    pendingNumb.textContent = tasks.length;
     document.querySelector(".task__input").value = "";
   }
 };
