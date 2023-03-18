@@ -12,5 +12,12 @@ document.querySelector(".task__add").onclick = function () {
 </button>
 </div>
 `;
+
+    const taskCurrent = document.querySelectorAll(".task__remove");
+    for (let i = 0; i < taskCurrent.length; i++) {
+      taskCurrent[i].onclick = function () {
+        this.parentNode.remove();
+      };
+    }
   }
 };
