@@ -1,5 +1,6 @@
+const pendingNumb = document.querySelector(".pending");
+
 document.querySelector(".task__add").onclick = function () {
-  const pendingNumb = document.querySelector(".pending");
   if (document.querySelector(".task__input").value == 0)
     alert("Please write a new task");
   else {
@@ -32,4 +33,10 @@ document.querySelector(".task__add").onclick = function () {
     pendingNumb.textContent = tasks.length;
     document.querySelector(".task__input").value = "";
   }
+};
+
+const deleteAllBtn = document.querySelector(".summary__remove-all");
+deleteAllBtn.onclick = () => {
+  document.querySelector(".taskboard").innerHTML = "";
+  pendingNumb.textContent = 0;
 };
