@@ -13,7 +13,15 @@
         <input type="text" placeholder="Add a new task" class="task__input" />
         <button class="task__add">+</button>
       </div>
-      <div class="taskboard"></div>
+      <div class="wrapper">
+        <div class="taskboard"></div>
+        <div class="summary">
+          <span class="summary__text"
+            >You have <span class="pending">0</span> pending tasks.</span
+          >
+          <button class="summary__remove-all">Clear All</button>
+        </div>
+      </div>
     </div>
     <script src="./main.js"></script>
   </body>
