@@ -23,8 +23,10 @@ document.querySelector(".task__add").onclick = function () {
     const tasks = document.querySelectorAll(".assignment");
     for (let i = 0; i < tasks.length; i++) {
       tasks[i].onclick = function () {
-        this.classList.toggle("completed");
+        this.classList.toggle("assignment__completed");
       };
     }
+
+    document.querySelector(".task__input").value = "";
   }
 };
