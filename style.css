@@ -88,7 +88,6 @@ body {
   border-bottom: 1px solid #999;
   display: inline-flex;
   margin-top: 1rem;
-  overflow: hidden;
   padding: 1rem 2rem;
   position: relative;
   width: 100%;
@@ -96,6 +95,8 @@ body {
 
 .assignment__name {
   font-size: 2rem;
+  max-width: 40rem;
+  overflow: auto;
 }
 
 .task__remove {
